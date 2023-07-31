@@ -1,490 +1,1061 @@
 <!DOCTYPE html>
+
 <head>
 
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
-<link rel="icon" href="/academicos/_comp/rs.php/img/favicon.ico" type="image/x-icon">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <link rel="icon" href="/academicos/_comp/rs.php/img/favicon.ico" type="image/x-icon">
 
-<title>SIU Guaraní - Oferta de comisiones</title>
+    <title>SIU Guaraní - Oferta de comisiones</title>
 
-	<script type="text/javascript" async="" src="https://ssl.google-analytics.com/ga.js"></script><script type="text/javascript" src="/academicos/_comp/siu/js/guarani_mash.js" charset="iso-8859-1"></script>
-			<link type="text/css" href="/academicos/_comp/siu/css/guarani_mash.css" rel="stylesheet">
-			
+    <script type="text/javascript" async="" src="https://ssl.google-analytics.com/ga.js"></script>
+    <script type="text/javascript" src="/academicos/_comp/siu/js/guarani_mash.js" charset="iso-8859-1"></script>
+    <link type="text/css" href="/academicos/_comp/siu/css/guarani_mash.css" rel="stylesheet">
+
     <!-- No se agrega en "guarani_mash.css" porque sino pierde la referencia de las fuentes -->
     <link type="text/css" href="/academicos/css/font-awesome-4.6.3/css/font-awesome.min.css" rel="stylesheet">
 
 
 
-<!--[if lt IE 9]>
+    <!--[if lt IE 9]>
 	<script type='text/javascript' src='/academicos/_comp/js/html5.js'></script>
 <![endif]-->
 
-	 
-	
-<script type="text/javascript">
-var kernel_config = {
-	widget_count: 3,
-	// Stalls js load until all widgets have loaded css and rendered its content
-	stall_js: false,
-	log: true,
-	alias: '/academicos',
-	pretty_urls: true,
-	op_default: 'inicio_alumno',
-	op_actual: 'inicio_alumno',
-	historia_activa: false,
-		log_id: '20230730_194130___7077',
-	url_log: 'https://guarani.uca.edu.ar/academicos/logger/',
-	url_log_info: 'https://guarani.uca.edu.ar/academicos/logger/ajax_info_log',
-	encoding: 'iso-8859-1',
-		es_produccion: true
-};
-var url_cambio_perfil = "https://guarani.uca.edu.ar/academicos/acceso/perfil";
-var url_cambio_carrera = "https://guarani.uca.edu.ar/academicos/acceso/cambiar_carrera";
 
-var autocompletar_input_habilitado = false;
 
-</script>
-	<script type="text/javascript">
-	  var _gaq = _gaq || [];
-	  _gaq.push(['_setAccount', 'UA-130642432-1' ]);
-	  	  _gaq.push(['_trackPageview']);
+    <script type="text/javascript">
+        var kernel_config = {
+            widget_count: 3,
+            // Stalls js load until all widgets have loaded css and rendered its content
+            stall_js: false,
+            log: true,
+            alias: '/academicos',
+            pretty_urls: true,
+            op_default: 'inicio_alumno',
+            op_actual: 'inicio_alumno',
+            historia_activa: false,
+            log_id: '20230730_194130___7077',
+            url_log: 'https://guarani.uca.edu.ar/academicos/logger/',
+            url_log_info: 'https://guarani.uca.edu.ar/academicos/logger/ajax_info_log',
+            encoding: 'iso-8859-1',
+            es_produccion: true
+        };
+        var url_cambio_perfil = "https://guarani.uca.edu.ar/academicos/acceso/perfil";
+        var url_cambio_carrera = "https://guarani.uca.edu.ar/academicos/acceso/cambiar_carrera";
 
-	  (function() {
-		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-	  })();
-</script>
-    <style class="lazyload" charset="iso-8859-1">@import "/academicos/_comp/siu/operaciones/inicio_alumno/lista_carreras/default.css";</style><script src="/academicos/_comp/siu/operaciones/inicio_alumno/lista_carreras/pagelet_lista_carreras.js" class="lazyload" charset="iso-8859-1"></script><style class="lazyload" charset="iso-8859-1">@import "/academicos/_comp/siu/operaciones/inicio_alumno/lista_encuestas_pendientes/default.css";</style><style class="lazyload" charset="iso-8859-1">@import "/academicos/_comp/siu/operaciones/_comun/pagelets/notificaciones/default.css";</style><script src="/academicos/_comp/siu/operaciones/_comun/pagelets/notificaciones/pagelet_notificaciones.js" class="lazyload" charset="iso-8859-1"></script><script src="/academicos/_comp/siu/js/notificaciones.js" class="lazyload" charset="iso-8859-1"></script><style class="lazyload" charset="iso-8859-1">@import "/academicos/_comp/siu/operaciones/oferta_comisiones/reporte/default.css";</style><script src="/academicos/_comp/siu/operaciones/oferta_comisiones/reporte/pagelet_reporte.js" class="lazyload" charset="iso-8859-1"></script><script src="/academicos/_comp/siu/js/plugin_autocompletar.js" class="lazyload" charset="iso-8859-1"></script>
+        var autocompletar_input_habilitado = false;
+    </script>
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-130642432-1']);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+            var ga = document.createElement('script');
+            ga.type = 'text/javascript';
+            ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+    <style class="lazyload" charset="iso-8859-1">
+        @import "/academicos/_comp/siu/operaciones/inicio_alumno/lista_carreras/default.css";
+    </style>
+    <script src="/academicos/_comp/siu/operaciones/inicio_alumno/lista_carreras/pagelet_lista_carreras.js" class="lazyload" charset="iso-8859-1"></script>
+    <style class="lazyload" charset="iso-8859-1">
+        @import "/academicos/_comp/siu/operaciones/inicio_alumno/lista_encuestas_pendientes/default.css";
+    </style>
+    <style class="lazyload" charset="iso-8859-1">
+        @import "/academicos/_comp/siu/operaciones/_comun/pagelets/notificaciones/default.css";
+    </style>
+    <script src="/academicos/_comp/siu/operaciones/_comun/pagelets/notificaciones/pagelet_notificaciones.js" class="lazyload" charset="iso-8859-1"></script>
+    <script src="/academicos/_comp/siu/js/notificaciones.js" class="lazyload" charset="iso-8859-1"></script>
+    <style class="lazyload" charset="iso-8859-1">
+        @import "/academicos/_comp/siu/operaciones/oferta_comisiones/reporte/default.css";
+    </style>
+    <script src="/academicos/_comp/siu/operaciones/oferta_comisiones/reporte/pagelet_reporte.js" class="lazyload" charset="iso-8859-1"></script>
+    <script src="/academicos/_comp/siu/js/plugin_autocompletar.js" class="lazyload" charset="iso-8859-1"></script>
 </head>
+
 <body>
-    <div class="js-recuadro_periodo recuadro" periodo="2023-680"><h3>Período lectivo: 2023 - 2do cuatrimestre Buenos Aires </h3>
-        <div class="js-recuadro_actividad" actividad="Álgebra y Geometría (GMA0126)"><h4 style="background-color:#0088cc; color:white;">Actividad: Álgebra y Geometría (GMA0126)</h4><table class="table table-bordered table-condensed comision" comision="149888" sede="1" docentes="ETCHEVERRY MELISA GISELLE, LA PORTA PATRICIA VIVIANA    , REMESAR PAULA INES"><tbody><tr class="comision"><th colspan="1"><h5>Comisión: 15AM</h5></th><td colspan="2" class="detalle_comision"><span><strong>Turno:</strong>
-        Mañana
-</span><span><strong>Cupo / insc.:</strong>
-        45 / 0
-</span></td><td colspan="1" class="detalle_comision"><span><strong>Instancias:</strong>
-Regularidad
-</span><span><strong>Ubicación:</strong>
-Buenos Aires
-</span><span><strong>Docentes:</strong>
-        ETCHEVERRY MELISA GISELLE (Asistente), LA PORTA PATRICIA VIVIANA     (Adjunto), REMESAR PAULA INES (Adjunto)
-</span>
-</td>
-</tr>
-<tr class="horarios encabezados">
-    <th class="tipo_curso">Tipo de clase</th>
-    <th class="dia">Día</th>
-    <th class="horario">Horario</th>
-    <th class="aula">Aula</th>
-</tr><tr class="js-dia horarios oscuro visible" dia_sem="Lunes" comision="149888">
-    <td>Práctica</td>
-    <td>Lunes</td>
-    <td>07:45 a 11:00</td>
-    <td>Aula a determinar</td>
-</tr>
-<tr class="js-dia horarios visible" dia_sem="Jueves" comision="149888">
-    <td>Teórico</td>
-    <td>Jueves</td>
-    <td>07:45 a 11:00</td>
-    <td>Aula a determinar</td>
-</tr>
-</tbody>
-</table>
-<table class="table table-bordered table-condensed comision" comision="149889" sede="1" docentes="GONZALEZ LUCIA MARIA, MONZON NELSON HUGO"><tbody><tr class="comision"><th colspan="1"><h5>Comisión: 15BM</h5></th><td colspan="2" class="detalle_comision"><span><strong>Turno:</strong>
-        Mañana
-</span><span><strong>Cupo / insc.:</strong>
-        45 / 0
-</span></td><td colspan="1" class="detalle_comision"><span><strong>Instancias:</strong>
-Regularidad
-</span><span><strong>Ubicación:</strong>
-Buenos Aires
-</span><span><strong>Docentes:</strong>
-        GONZALEZ LUCIA MARIA (Adjunto), MONZON NELSON HUGO (Asistente)
-</span></td></tr><tr class="horarios encabezados"><th class="tipo_curso">Tipo de clase</th><th class="dia">Día</th><th class="horario">Horario</th><th class="aula">Aula</th></tr><tr class="js-dia horarios oscuro visible" dia_sem="Lunes" comision="149889"><td>
-        Práctica
-    </td><td>Lunes</td><td>
-        11:30 a 15:00
-    </td><td>
-        Aula a determinar
-    </td></tr><tr class="js-dia horarios visible" dia_sem="Martes" comision="149889"><td>
-        Teórico
-    </td><td>Martes</td><td>
-        07:45 a 11:00
-    </td><td>
-        Aula a determinar
-    </td></tr></tbody></table><table class="table table-bordered table-condensed comision" comision="149890" sede="1" docentes="AGUILAR GLADYS MABEL         , REMESAR PAULA INES"><tbody><tr class="comision"><th colspan="1"><h5>Comisión: 15CM</h5></th><td colspan="2" class="detalle_comision"><span><strong>Turno:</strong>
-        Mañana
-</span><span><strong>Cupo / insc.:</strong>
-        45 / 0
-</span></td><td colspan="1" class="detalle_comision"><span><strong>Instancias:</strong>
-Regularidad
-</span><span><strong>Ubicación:</strong>
-Buenos Aires
-</span><span><strong>Docentes:</strong>
-        AGUILAR GLADYS MABEL          (Protitular), REMESAR PAULA INES (Adjunto)
-</span></td></tr><tr class="horarios encabezados"><th class="tipo_curso">Tipo de clase</th><th class="dia">Día</th><th class="horario">Horario</th><th class="aula">Aula</th></tr><tr class="js-dia horarios oscuro visible" dia_sem="Martes" comision="149890"><td>
-        Práctica
-    </td><td>Martes</td><td>
-        10:15 a 14:15
-    </td><td>
-        Aula a determinar
-    </td></tr><tr class="js-dia horarios visible" dia_sem="Viernes" comision="149890"><td>
-        Teórico
-    </td><td>Viernes</td><td>
-        09:30 a 13:00
-    </td><td>
-        Aula a determinar
-    </td></tr></tbody></table><table class="table table-bordered table-condensed comision" comision="149891" sede="1" docentes="CANGA SANDRA CARMEN          , MADDONNI SEBASTIAN ERNESTO, ROZENWASSER LAURA            "><tbody><tr class="comision"><th colspan="1"><h5>Comisión: 15DM</h5></th><td colspan="2" class="detalle_comision"><span><strong>Turno:</strong>
-        Mañana
-</span><span><strong>Cupo / insc.:</strong>
-        45 / 0
-</span></td><td colspan="1" class="detalle_comision"><span><strong>Instancias:</strong>
-Regularidad
-</span><span><strong>Ubicación:</strong>
-Buenos Aires
-</span><span><strong>Docentes:</strong>
-        CANGA SANDRA CARMEN           (Adjunto), MADDONNI SEBASTIAN ERNESTO (Asistente), ROZENWASSER LAURA             (Adjunto)
-</span></td></tr><tr class="horarios encabezados"><th class="tipo_curso">Tipo de clase</th><th class="dia">Día</th><th class="horario">Horario</th><th class="aula">Aula</th></tr><tr class="js-dia horarios oscuro visible" dia_sem="Lunes" comision="149891"><td>
-        Práctica
-    </td><td>Lunes</td><td>
-        07:45 a 11:00
-    </td><td>
-        Aula a determinar
-    </td></tr><tr class="js-dia horarios visible" dia_sem="Viernes" comision="149891"><td>
-        Teórico
-    </td><td>Viernes</td><td>
-        10:15 a 14:15
-    </td><td>
-        Aula a determinar
-    </td></tr></tbody></table><table class="table table-bordered table-condensed comision" comision="149892" sede="1" docentes="BOUTET STELLA MARIS          , ETCHEVERRY MELISA GISELLE"><tbody><tr class="comision"><th colspan="1"><h5>Comisión: 15GM</h5></th><td colspan="2" class="detalle_comision"><span><strong>Turno:</strong>
-        Mañana
-</span><span><strong>Cupo / insc.:</strong>
-        45 / 0
-</span></td><td colspan="1" class="detalle_comision"><span><strong>Instancias:</strong>
-Regularidad
-</span><span><strong>Ubicación:</strong>
-Buenos Aires
-</span><span><strong>Docentes:</strong>
-        BOUTET STELLA MARIS           (Adjunto), ETCHEVERRY MELISA GISELLE (Asistente)
-</span></td></tr><tr class="horarios encabezados"><th class="tipo_curso">Tipo de clase</th><th class="dia">Día</th><th class="horario">Horario</th><th class="aula">Aula</th></tr><tr class="js-dia horarios oscuro visible" dia_sem="Lunes" comision="149892"><td>
-        Teórico
-    </td><td>Lunes</td><td>
-        07:45 a 11:00
-    </td><td>
-        Aula a determinar
-    </td></tr><tr class="js-dia horarios visible" dia_sem="Jueves" comision="149892"><td>
-        Práctica
-    </td><td>Jueves</td><td>
-        07:45 a 11:00
-    </td><td>
-        Aula a determinar
-    </td></tr></tbody></table><table class="table table-bordered table-condensed comision" comision="149893" sede="1" docentes="BARBAGALLO MARA ANDREA       , D'ANGELO SILVINA CECILIA     "><tbody><tr class="comision"><th colspan="1"><h5>Comisión: 15MM</h5></th><td colspan="2" class="detalle_comision"><span><strong>Turno:</strong>
-        Mañana
-</span><span><strong>Cupo / insc.:</strong>
-        45 / 0
-</span></td><td colspan="1" class="detalle_comision"><span><strong>Instancias:</strong>
-Regularidad
-</span><span><strong>Ubicación:</strong>
-Buenos Aires
-</span><span><strong>Docentes:</strong>
-        BARBAGALLO MARA ANDREA        (Protitular), D'ANGELO SILVINA CECILIA      (Adjunto)
-</span></td></tr><tr class="horarios encabezados"><th class="tipo_curso">Tipo de clase</th><th class="dia">Día</th><th class="horario">Horario</th><th class="aula">Aula</th></tr><tr class="js-dia horarios oscuro visible" dia_sem="Lunes" comision="149893"><td>
-        Teórico
-    </td><td>Lunes</td><td>
-        14:15 a 17:30
-    </td><td>
-        Aula a determinar
-    </td></tr><tr class="js-dia horarios visible" dia_sem="Jueves" comision="149893"><td>
-        Práctica
-    </td><td>Jueves</td><td>
-        07:45 a 11:00
-    </td><td>
-        Aula a determinar
-    </td></tr></tbody></table><table class="table table-bordered table-condensed comision" comision="152176" sede="1" docentes="MONZON NELSON HUGO, REMESAR PAULA INES"><tbody><tr class="comision"><th colspan="1"><h5>Comisión: 15IN</h5></th><td colspan="2" class="detalle_comision"><span><strong>Turno:</strong>
-        Noche
-</span><span><strong>Cupo / insc.:</strong>
-        45 / 0
-</span></td><td colspan="1" class="detalle_comision"><span><strong>Instancias:</strong>
-Regularidad
-</span><span><strong>Ubicación:</strong>
-Buenos Aires
-</span><span><strong>Docentes:</strong>
-        MONZON NELSON HUGO (Asistente), REMESAR PAULA INES (Adjunto)
-</span></td></tr><tr class="horarios encabezados"><th class="tipo_curso">Tipo de clase</th><th class="dia">Día</th><th class="horario">Horario</th><th class="aula">Aula</th></tr><tr class="js-dia horarios oscuro visible" dia_sem="Martes" comision="152176"><td>
-        Teórico
-    </td><td>Martes</td><td>
-        16:00 a 19:30
-    </td><td>
-        Aula a determinar
-    </td></tr><tr class="js-dia horarios visible" dia_sem="Viernes" comision="152176"><td>
-        Práctica
-    </td><td>Viernes</td><td>
-        16:00 a 19:30
-    </td><td>
-        Aula a determinar
-    </td></tr></tbody></table><table class="table table-bordered table-condensed comision" comision="153041" sede="1" docentes="Sin docentes"><tbody><tr class="comision"><th colspan="1"><h5>Comisión: 15KM</h5></th><td colspan="2" class="detalle_comision"><span><strong>Turno:</strong>
-        Mañana
-</span><span><strong>Cupo / insc.:</strong>
-        45 / 0
-</span></td><td colspan="1" class="detalle_comision"><span><strong>Instancias:</strong>
-Regularidad
-</span><span><strong>Ubicación:</strong>
-Buenos Aires
-</span><span><strong>Docentes:</strong>
-        Sin docentes
-</span></td></tr><tr class="horarios encabezados"><th class="tipo_curso">Tipo de clase</th><th class="dia">Día</th><th class="horario">Horario</th><th class="aula">Aula</th></tr><tr class="js-dia horarios oscuro visible" dia_sem="Lunes" comision="153041"><td>
-        Práctica
-    </td><td>Lunes</td><td>
-        07:45 a 11:00
-    </td><td>
-        Aula a determinar
-    </td></tr><tr class="js-dia horarios visible" dia_sem="Viernes" comision="153041"><td>
-        Teórico
-    </td><td>Viernes</td><td>
-        10:15 a 14:15
-    </td><td>
-        Aula a determinar
-    </td></tr></tbody></table></div><div class="js-recuadro_actividad" actividad="Análisis Económico y Optimización (Micro) (GEC0224)" style="display: block;"><h4 style="background-color:#0088cc; color:white;">Actividad: Análisis Económico y Optimización (Micro) (GEC0224)</h4><table class="table table-bordered table-condensed comision" comision="149918" sede="1" docentes="COCCOLO PABLO BARTOLOME      "><tbody><tr class="comision"><th colspan="1"><h5>Comisión: 15AM - Industriales y Electrónicos</h5></th><td colspan="2" class="detalle_comision"><span><strong>Turno:</strong>
-        Mañana
-</span><span><strong>Cupo / insc.:</strong>
-        45 / 0
-</span></td><td colspan="1" class="detalle_comision"><span><strong>Instancias:</strong>
-Regularidad
-</span><span><strong>Ubicación:</strong>
-Buenos Aires
-</span><span><strong>Docentes:</strong>
-        COCCOLO PABLO BARTOLOME       (Protitular)
-</span></td></tr><tr class="horarios encabezados"><th class="tipo_curso">Tipo de clase</th><th class="dia">Día</th><th class="horario">Horario</th><th class="aula">Aula</th></tr><tr class="js-dia horarios oscuro visible" dia_sem="Lunes" comision="149918"><td>
-        Práctica
-    </td><td>Lunes</td><td>
-        14:15 a 16:00
-    </td><td>
-        Aula a determinar
-    </td></tr><tr class="js-dia horarios visible" dia_sem="Miercoles" comision="149918"><td>
-        Teórico
-    </td><td>Miércoles</td><td>
-        08:30 a 10:15
-    </td><td>
-        Aula a determinar
-    </td></tr></tbody></table><table class="table table-bordered table-condensed comision" comision="149919" sede="1" docentes="FERRARI JUAN ANTONIO         "><tbody><tr class="comision"><th colspan="1"><h5>Comisión: 15BM - Industriales y Electrónicos</h5></th><td colspan="2" class="detalle_comision"><span><strong>Turno:</strong>
-        Mañana
-</span><span><strong>Cupo / insc.:</strong>
-        45 / 0
-</span></td><td colspan="1" class="detalle_comision"><span><strong>Instancias:</strong>
-Regularidad
-</span><span><strong>Ubicación:</strong>
-Buenos Aires
-</span><span><strong>Docentes:</strong>
-        FERRARI JUAN ANTONIO          (Adjunto)
-</span></td></tr><tr class="horarios encabezados"><th class="tipo_curso">Tipo de clase</th><th class="dia">Día</th><th class="horario">Horario</th><th class="aula">Aula</th></tr><tr class="js-dia horarios oscuro visible" dia_sem="Lunes" comision="149919"><td>
-        Práctica
-    </td><td>Lunes</td><td>
-        07:45 a 09:15
-    </td><td>
-        Aula a determinar
-    </td></tr><tr class="js-dia horarios visible" dia_sem="Lunes" comision="149919"><td>
-        Teórico
-    </td><td>Lunes</td><td>
-        09:30 a 11:00
-    </td><td>
-        Aula a determinar
-    </td></tr></tbody></table><table class="table table-bordered table-condensed comision" comision="149920" sede="1" docentes="GREAVES PEDRO LUIS EUGENIO   "><tbody><tr class="comision"><th colspan="1"><h5>Comisión: 15DM - Ambientales</h5></th><td colspan="2" class="detalle_comision"><span><strong>Turno:</strong>
-        Mañana
-</span><span><strong>Cupo / insc.:</strong>
-        45 / 0
-</span></td><td colspan="1" class="detalle_comision"><span><strong>Instancias:</strong>
-Regularidad
-</span><span><strong>Ubicación:</strong>
-Buenos Aires
-</span><span><strong>Docentes:</strong>
-        GREAVES PEDRO LUIS EUGENIO    (Adjunto)
-</span></td></tr><tr class="horarios encabezados"><th class="tipo_curso">Tipo de clase</th><th class="dia">Día</th><th class="horario">Horario</th><th class="aula">Aula</th></tr><tr class="js-dia horarios oscuro visible" dia_sem="Martes" comision="149920"><td>
-        Teórico
-    </td><td>Martes</td><td>
-        15:15 a 16:45
-    </td><td>
-        Aula a determinar
-    </td></tr><tr class="js-dia horarios visible" dia_sem="Martes" comision="149920"><td>
-        Práctica
-    </td><td>Martes</td><td>
-        16:45 a 18:45
-    </td><td>
-        Aula a determinar
-    </td></tr></tbody></table><table class="table table-bordered table-condensed comision" comision="149921" sede="1" docentes="COCCOLO PABLO BARTOLOME      "><tbody><tr class="comision"><th colspan="1"><h5>Comisión: 15EN - Ing. Civil</h5></th><td colspan="2" class="detalle_comision"><span><strong>Turno:</strong>
-        Noche
-</span><span><strong>Cupo / insc.:</strong>
-        45 / 0
-</span></td><td colspan="1" class="detalle_comision"><span><strong>Instancias:</strong>
-Regularidad
-</span><span><strong>Ubicación:</strong>
-Buenos Aires
-</span><span><strong>Docentes:</strong>
-        COCCOLO PABLO BARTOLOME       (Protitular)
-</span></td></tr><tr class="horarios encabezados"><th class="tipo_curso">Tipo de clase</th><th class="dia">Día</th><th class="horario">Horario</th><th class="aula">Aula</th></tr><tr class="js-dia horarios oscuro visible" dia_sem="Miercoles" comision="149921"><td>
-        Teórico
-    </td><td>Miércoles</td><td>
-        16:00 a 17:30
-    </td><td>
-        Aula a determinar
-    </td></tr><tr class="js-dia horarios visible" dia_sem="Miercoles" comision="149921"><td>
-        Práctica
-    </td><td>Miércoles</td><td>
-        18:00 a 19:30
-    </td><td>
-        Aula a determinar
-    </td></tr></tbody></table></div><div class="js-recuadro_actividad" actividad="Arquitectura de Computadoras (GCO0330)" style="display: block;"><h4 style="background-color:#0088cc; color:white;">Actividad: Arquitectura de Computadoras (GCO0330)</h4><table class="table table-bordered table-condensed comision" comision="149941" sede="1" docentes="HAMKALO JOSE LUIS            "><tbody><tr class="comision"><th colspan="1"><h5>Comisión: 15FN - Ing. Informática</h5></th><td colspan="2" class="detalle_comision"><span><strong>Turno:</strong>
-        Noche
-</span><span><strong>Cupo / insc.:</strong>
-        30 / 0
-</span></td><td colspan="1" class="detalle_comision"><span><strong>Instancias:</strong>
-Regularidad
-</span><span><strong>Ubicación:</strong>
-Buenos Aires
-</span><span><strong>Docentes:</strong>
-        HAMKALO JOSE LUIS             (Titular)
-</span></td></tr><tr class="horarios encabezados"><th class="tipo_curso">Tipo de clase</th><th class="dia">Día</th><th class="horario">Horario</th><th class="aula">Aula</th></tr><tr class="js-dia horarios oscuro visible" dia_sem="Martes" comision="149941"><td>
-        Teórico
-    </td><td>Martes</td><td>
-        19:45 a 23:00
-    </td><td>
-        Aula a determinar
-    </td></tr><tr class="js-dia horarios visible" dia_sem="Viernes" comision="149941"><td>
-        Práctica
-    </td><td>Viernes</td><td>
-        19:45 a 23:00
-    </td><td>
-        Aula a determinar
-    </td></tr></tbody></table></div><div class="js-recuadro_actividad" actividad="Auditoría Informática (GCC0524)" style="display: block;"><h4 style="background-color:#0088cc; color:white;">Actividad: Auditoría Informática (GCC0524)</h4><table class="table table-bordered table-condensed comision" comision="149951" sede="1" docentes="BOLLMANN GERMAN GUSTAVO, ZANOTTI ALEJANDRO"><tbody><tr class="comision"><th colspan="1"><h5>Comisión: 15FN - Ing. Informática</h5></th><td colspan="2" class="detalle_comision"><span><strong>Turno:</strong>
-        Noche
-</span><span><strong>Cupo / insc.:</strong>
-        30 / 0
-</span></td><td colspan="1" class="detalle_comision"><span><strong>Instancias:</strong>
-Regularidad
-</span><span><strong>Ubicación:</strong>
-Buenos Aires
-</span><span><strong>Docentes:</strong>
-        BOLLMANN GERMAN GUSTAVO (Protitular), ZANOTTI ALEJANDRO (Asistente)
-</span></td></tr><tr class="horarios encabezados"><th class="tipo_curso">Tipo de clase</th><th class="dia">Día</th><th class="horario">Horario</th><th class="aula">Aula</th></tr><tr class="js-dia horarios oscuro visible" dia_sem="Martes" comision="149951"><td>
-        Teórico
-    </td><td>Martes</td><td>
-        18:00 a 20:30
-    </td><td>
-        Aula a determinar
-    </td></tr><tr class="js-dia horarios visible" dia_sem="Martes" comision="149951"><td>
-        Práctica
-    </td><td>Martes</td><td>
-        20:30 a 23:00
-    </td><td>
-        Aula a determinar
-    </td></tr></tbody></table></div><div class="js-recuadro_actividad" actividad="Base de Datos (GCO0422)" style="display: block;"><h4 style="background-color:#0088cc; color:white;">Actividad: Base de Datos (GCO0422)</h4><table class="table table-bordered table-condensed comision" comision="149954" sede="1" docentes="DI PASQUALE RICARDO HECTOR   , ISIDRO ALEJANDRO DANIEL      "><tbody><tr class="comision"><th colspan="1"><h5>Comisión: 15FN - Ing. Informática</h5></th><td colspan="2" class="detalle_comision"><span><strong>Turno:</strong>
-        Noche
-</span><span><strong>Cupo / insc.:</strong>
-        35 / 0
-</span></td><td colspan="1" class="detalle_comision"><span><strong>Instancias:</strong>
-Regularidad
-</span><span><strong>Ubicación:</strong>
-Buenos Aires
-</span><span><strong>Docentes:</strong>
-        DI PASQUALE RICARDO HECTOR    (Protitular), ISIDRO ALEJANDRO DANIEL       (Asistente)
-</span></td></tr><tr class="horarios encabezados"><th class="tipo_curso">Tipo de clase</th><th class="dia">Día</th><th class="horario">Horario</th><th class="aula">Aula</th></tr><tr class="js-dia horarios oscuro visible" dia_sem="Martes" comision="149954"><td>
-        Teórico
-    </td><td>Martes</td><td>
-        18:00 a 20:30
-    </td><td>
-        Aula a determinar
-    </td></tr><tr class="js-dia horarios visible" dia_sem="Martes" comision="149954"><td>
-        Práctica
-    </td><td>Martes</td><td>
-        20:30 a 23:00
-    </td><td>
-        Aula a determinar
-    </td></tr></tbody></table></div><div class="js-recuadro_actividad" actividad="Buenas Prácticas Comunitarias en Discapacidad (GSO0980)" style="display: block;"><h4 style="background-color:#0088cc; color:white;">Actividad: Buenas Prácticas Comunitarias en Discapacidad (GSO0980)</h4><table class="table table-bordered table-condensed comision" comision="149970" sede="1" docentes="Sin docentes"><tbody><tr class="comision"><th colspan="1"><h5>Comisión: 04ZT (Pantano-Aguirre)</h5></th><td colspan="2" class="detalle_comision"><span><strong>Turno:</strong>
-        Tarde
-</span><span><strong>Cupo / insc.:</strong>
-        Sin definir / 0
-</span></td><td colspan="1" class="detalle_comision"><span><strong>Instancias:</strong>
-Promoción
-</span><span><strong>Ubicación:</strong>
-Buenos Aires
-</span><span><strong>Docentes:</strong>
-        Sin docentes
-</span></td></tr><tr class="horarios encabezados"><th class="tipo_curso">Tipo de clase</th><th class="dia">Día</th><th class="horario">Horario</th><th class="aula">Aula</th></tr><tr class="js-dia horarios oscuro visible" dia_sem="sin_definir" comision="149970"><td>
-        Sin definir
-    </td><td>Sin definir</td><td>
-        Sin definir
-    </td><td>
-        Aula a determinar
-    </td></tr></tbody></table></div><div class="js-recuadro_actividad" actividad="Cálculo Avanzado (GMA0230)" style="display: block;"><h4 style="background-color:#0088cc; color:white;">Actividad: Cálculo Avanzado (GMA0230)</h4><table class="table table-bordered table-condensed comision" comision="149972" sede="1" docentes="PAVON MARTIN ROBERTO         , RIU JORGE ANIBAL             "><tbody><tr class="comision"><th colspan="1"><h5>Comisión: 15MM</h5></th><td colspan="2" class="detalle_comision"><span><strong>Turno:</strong>
-        Mañana
-</span><span><strong>Cupo / insc.:</strong>
-        45 / 0
-</span></td><td colspan="1" class="detalle_comision"><span><strong>Instancias:</strong>
-Regularidad
-</span><span><strong>Ubicación:</strong>
-Buenos Aires
-</span><span><strong>Docentes:</strong>
-        PAVON MARTIN ROBERTO          (Titular), RIU JORGE ANIBAL              (Adjunto)
-</span></td></tr><tr class="horarios encabezados"><th class="tipo_curso">Tipo de clase</th><th class="dia">Día</th><th class="horario">Horario</th><th class="aula">Aula</th></tr><tr class="js-dia horarios oscuro visible" dia_sem="Lunes" comision="149972"><td>
-        Teórico
-    </td><td>Lunes</td><td>
-        10:15 a 14:15
-    </td><td>
-        Aula a determinar
-    </td></tr><tr class="js-dia horarios visible" dia_sem="Jueves" comision="149972"><td>
-        Práctica
-    </td><td>Jueves</td><td>
-        07:45 a 12:15
-    </td><td>
-        Aula a determinar
-    </td></tr></tbody></table><table class="table table-bordered table-condensed comision" comision="149973" sede="1" docentes="GUERON SANCHEZ JORGE ISIDORO , RIU JORGE ANIBAL             "><tbody><tr class="comision"><th colspan="1"><h5>Comisión: 15NM</h5></th><td colspan="2" class="detalle_comision"><span><strong>Turno:</strong>
-        Mañana
-</span><span><strong>Cupo / insc.:</strong>
-        45 / 0
-</span></td><td colspan="1" class="detalle_comision"><span><strong>Instancias:</strong>
-Regularidad
-</span><span><strong>Ubicación:</strong>
-Buenos Aires
-</span><span><strong>Docentes:</strong>
-        GUERON SANCHEZ JORGE ISIDORO  (Adjunto), RIU JORGE ANIBAL              (Adjunto)
-</span></td></tr><tr class="horarios encabezados"><th class="tipo_curso">Tipo de clase</th><th class="dia">Día</th><th class="horario">Horario</th><th class="aula">Aula</th></tr><tr class="js-dia horarios oscuro visible" dia_sem="Martes" comision="149973"><td>
-        Práctica
-    </td><td>Martes</td><td>
-        07:45 a 12:15
-    </td><td>
-        Aula a determinar
-    </td></tr><tr class="js-dia horarios visible" dia_sem="Jueves" comision="149973"><td>
-        Teórico
-    </td><td>Jueves</td><td>
-        07:45 a 11:00
-    </td><td>
-        Aula a determinar
-    </td></tr></tbody></table><table class="table table-bordered table-condensed comision" comision="149974" sede="1" docentes="CANGA SANDRA CARMEN          , CORVALAN ALVARO              "><tbody><tr class="comision"><th colspan="1"><h5>Comisión: 15OM</h5></th><td colspan="2" class="detalle_comision"><span><strong>Turno:</strong>
-        Mañana
-</span><span><strong>Cupo / insc.:</strong>
-        45 / 0
-</span></td><td colspan="1" class="detalle_comision"><span><strong>Instancias:</strong>
-Regularidad
-</span><span><strong>Ubicación:</strong>
-Buenos Aires
-</span><span><strong>Docentes:</strong>
-        CANGA SANDRA CARMEN           (Adjunto), CORVALAN ALVARO               (Adjunto)
-</span></td></tr><tr class="horarios encabezados"><th class="tipo_curso">Tipo de clase</th><th class="dia">Día</th><th class="horario">Horario</th><th class="aula">Aula</th></tr><tr class="js-dia horarios oscuro visible" dia_sem="Martes" comision="149974"><td>
-        Teórico
-    </td><td>Martes</td><td>
-        07:45 a 11:00
-    </td><td>
-        Aula a determinar
-    </td></tr><tr class="js-dia horarios visible" dia_sem="Miercoles" comision="149974"><td>
-        Práctica
-    </td><td>Miércoles</td><td>
-        07:45 a 12:15
-    </td><td>
-        Aula a determinar
-    </td>
-    </tr>
-    </tbody>
-    </table>
-    </div>
+    <div class="js-recuadro_periodo recuadro" periodo="2023-680">
+        <h3>Período lectivo: 2023 - 2do cuatrimestre Buenos Aires </h3>
+        <div class="js-recuadro_actividad" actividad="Álgebra y Geometría (GMA0126)">
+            <h4 style="background-color:#0088cc; color:white;">Actividad: Álgebra y Geometría (GMA0126)</h4>
+
+            <table class="table table-bordered table-condensed comision" comision="149888" sede="1" docentes="ETCHEVERRY MELISA GISELLE, LA PORTA PATRICIA VIVIANA    , REMESAR PAULA INES">
+                <tbody>
+                    <tr class="comision">
+                        <th colspan="1">
+                            <h5>Comisión: 15AM</h5>
+                        </th>
+                        <td colspan="2" class="detalle_comision">
+                            <span><strong>Turno:</strong>
+                                Mañana
+                            </span><span><strong>Cupo / insc.:</strong>
+                                45 / 0
+                            </span>
+                        </td>
+                        <td colspan="1" class="detalle_comision"><span><strong>Instancias:</strong>
+                                Regularidad
+                            </span><span><strong>Ubicación:</strong>
+                                Buenos Aires
+                            </span><span><strong>Docentes:</strong>
+                                ETCHEVERRY MELISA GISELLE (Asistente), LA PORTA PATRICIA VIVIANA (Adjunto), REMESAR
+                                PAULA INES (Adjunto)
+                            </span>
+                        </td>
+                    </tr>
+                    <tr class="horarios encabezados">
+                        <th class="tipo_curso">Tipo de clase</th>
+                        <th class="dia">Día</th>
+                        <th class="horario">Horario</th>
+                        <th class="aula">Aula</th>
+                    </tr>
+                    <tr class="js-dia horarios oscuro visible" dia_sem="Lunes" comision="149888">
+                        <td>Práctica</td>
+                        <td>Lunes</td>
+                        <td>07:45 a 11:00</td>
+                        <td>Aula a determinar</td>
+                    </tr>
+                    <tr class="js-dia horarios visible" dia_sem="Jueves" comision="149888">
+                        <td>Teórico</td>
+                        <td>Jueves</td>
+                        <td>07:45 a 11:00</td>
+                        <td>Aula a determinar</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <table class="table table-bordered table-condensed comision" comision="149889" sede="1" docentes="GONZALEZ LUCIA MARIA, MONZON NELSON HUGO">
+                <tbody>
+                    <tr class="comision">
+                        <th colspan="1">
+                            <h5>Comisión: 15BM</h5>
+                        </th>
+                        <td colspan="2" class="detalle_comision"><span><strong>Turno:</strong>
+                                Mañana
+                            </span><span><strong>Cupo / insc.:</strong>
+                                45 / 0
+                            </span></td>
+                        <td colspan="1" class="detalle_comision"><span><strong>Instancias:</strong>
+                                Regularidad
+                            </span><span><strong>Ubicación:</strong>
+                                Buenos Aires
+                            </span><span><strong>Docentes:</strong>
+                                GONZALEZ LUCIA MARIA (Adjunto), MONZON NELSON HUGO (Asistente)
+                            </span></td>
+                    </tr>
+                    <tr class="horarios encabezados">
+                        <th class="tipo_curso">Tipo de clase</th>
+                        <th class="dia">Día</th>
+                        <th class="horario">Horario</th>
+                        <th class="aula">Aula</th>
+                    </tr>
+                    <tr class="js-dia horarios oscuro visible" dia_sem="Lunes" comision="149889">
+                        <td>
+                            Práctica
+                        </td>
+                        <td>Lunes</td>
+                        <td>
+                            11:30 a 15:00
+                        </td>
+                        <td>
+                            Aula a determinar
+                        </td>
+                    </tr>
+                    <tr class="js-dia horarios visible" dia_sem="Martes" comision="149889">
+                        <td>
+                            Teórico
+                        </td>
+                        <td>Martes</td>
+                        <td>
+                            07:45 a 11:00
+                        </td>
+                        <td>
+                            Aula a determinar
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <table class="table table-bordered table-condensed comision" comision="149890" sede="1" docentes="AGUILAR GLADYS MABEL         , REMESAR PAULA INES">
+                <tbody>
+                    <tr class="comision">
+                        <th colspan="1">
+                            <h5>Comisión: 15CM</h5>
+                        </th>
+                        <td colspan="2" class="detalle_comision"><span><strong>Turno:</strong>
+                                Mañana
+                            </span><span><strong>Cupo / insc.:</strong>
+                                45 / 0
+                            </span></td>
+                        <td colspan="1" class="detalle_comision"><span><strong>Instancias:</strong>
+                                Regularidad
+                            </span><span><strong>Ubicación:</strong>
+                                Buenos Aires
+                            </span><span><strong>Docentes:</strong>
+                                AGUILAR GLADYS MABEL (Protitular), REMESAR PAULA INES (Adjunto)
+                            </span></td>
+                    </tr>
+                    <tr class="horarios encabezados">
+                        <th class="tipo_curso">Tipo de clase</th>
+                        <th class="dia">Día</th>
+                        <th class="horario">Horario</th>
+                        <th class="aula">Aula</th>
+                    </tr>
+                    <tr class="js-dia horarios oscuro visible" dia_sem="Martes" comision="149890">
+                        <td>
+                            Práctica
+                        </td>
+                        <td>Martes</td>
+                        <td>
+                            10:15 a 14:15
+                        </td>
+                        <td>
+                            Aula a determinar
+                        </td>
+                    </tr>
+                    <tr class="js-dia horarios visible" dia_sem="Viernes" comision="149890">
+                        <td>
+                            Teórico
+                        </td>
+                        <td>Viernes</td>
+                        <td>
+                            09:30 a 13:00
+                        </td>
+                        <td>
+                            Aula a determinar
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-bordered table-condensed comision" comision="149891" sede="1" docentes="CANGA SANDRA CARMEN          , MADDONNI SEBASTIAN ERNESTO, ROZENWASSER LAURA            ">
+                <tbody>
+                    <tr class="comision">
+                        <th colspan="1">
+                            <h5>Comisión: 15DM</h5>
+                        </th>
+                        <td colspan="2" class="detalle_comision"><span><strong>Turno:</strong>
+                                Mañana
+                            </span><span><strong>Cupo / insc.:</strong>
+                                45 / 0
+                            </span></td>
+                        <td colspan="1" class="detalle_comision"><span><strong>Instancias:</strong>
+                                Regularidad
+                            </span><span><strong>Ubicación:</strong>
+                                Buenos Aires
+                            </span><span><strong>Docentes:</strong>
+                                CANGA SANDRA CARMEN (Adjunto), MADDONNI SEBASTIAN ERNESTO (Asistente), ROZENWASSER LAURA
+                                (Adjunto)
+                            </span></td>
+                    </tr>
+                    <tr class="horarios encabezados">
+                        <th class="tipo_curso">Tipo de clase</th>
+                        <th class="dia">Día</th>
+                        <th class="horario">Horario</th>
+                        <th class="aula">Aula</th>
+                    </tr>
+                    <tr class="js-dia horarios oscuro visible" dia_sem="Lunes" comision="149891">
+                        <td>
+                            Práctica
+                        </td>
+                        <td>Lunes</td>
+                        <td>
+                            07:45 a 11:00
+                        </td>
+                        <td>
+                            Aula a determinar
+                        </td>
+                    </tr>
+                    <tr class="js-dia horarios visible" dia_sem="Viernes" comision="149891">
+                        <td>
+                            Teórico
+                        </td>
+                        <td>Viernes</td>
+                        <td>
+                            10:15 a 14:15
+                        </td>
+                        <td>
+                            Aula a determinar
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-bordered table-condensed comision" comision="149892" sede="1" docentes="BOUTET STELLA MARIS          , ETCHEVERRY MELISA GISELLE">
+                <tbody>
+                    <tr class="comision">
+                        <th colspan="1">
+                            <h5>Comisión: 15GM</h5>
+                        </th>
+                        <td colspan="2" class="detalle_comision"><span><strong>Turno:</strong>
+                                Mañana
+                            </span><span><strong>Cupo / insc.:</strong>
+                                45 / 0
+                            </span></td>
+                        <td colspan="1" class="detalle_comision"><span><strong>Instancias:</strong>
+                                Regularidad
+                            </span><span><strong>Ubicación:</strong>
+                                Buenos Aires
+                            </span><span><strong>Docentes:</strong>
+                                BOUTET STELLA MARIS (Adjunto), ETCHEVERRY MELISA GISELLE (Asistente)
+                            </span></td>
+                    </tr>
+                    <tr class="horarios encabezados">
+                        <th class="tipo_curso">Tipo de clase</th>
+                        <th class="dia">Día</th>
+                        <th class="horario">Horario</th>
+                        <th class="aula">Aula</th>
+                    </tr>
+                    <tr class="js-dia horarios oscuro visible" dia_sem="Lunes" comision="149892">
+                        <td>
+                            Teórico
+                        </td>
+                        <td>Lunes</td>
+                        <td>
+                            07:45 a 11:00
+                        </td>
+                        <td>
+                            Aula a determinar
+                        </td>
+                    </tr>
+                    <tr class="js-dia horarios visible" dia_sem="Jueves" comision="149892">
+                        <td>
+                            Práctica
+                        </td>
+                        <td>Jueves</td>
+                        <td>
+                            07:45 a 11:00
+                        </td>
+                        <td>
+                            Aula a determinar
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-bordered table-condensed comision" comision="149893" sede="1" docentes="BARBAGALLO MARA ANDREA       , D'ANGELO SILVINA CECILIA     ">
+                <tbody>
+                    <tr class="comision">
+                        <th colspan="1">
+                            <h5>Comisión: 15MM</h5>
+                        </th>
+                        <td colspan="2" class="detalle_comision"><span><strong>Turno:</strong>
+                                Mañana
+                            </span><span><strong>Cupo / insc.:</strong>
+                                45 / 0
+                            </span></td>
+                        <td colspan="1" class="detalle_comision"><span><strong>Instancias:</strong>
+                                Regularidad
+                            </span><span><strong>Ubicación:</strong>
+                                Buenos Aires
+                            </span><span><strong>Docentes:</strong>
+                                BARBAGALLO MARA ANDREA (Protitular), D'ANGELO SILVINA CECILIA (Adjunto)
+                            </span></td>
+                    </tr>
+                    <tr class="horarios encabezados">
+                        <th class="tipo_curso">Tipo de clase</th>
+                        <th class="dia">Día</th>
+                        <th class="horario">Horario</th>
+                        <th class="aula">Aula</th>
+                    </tr>
+                    <tr class="js-dia horarios oscuro visible" dia_sem="Lunes" comision="149893">
+                        <td>
+                            Teórico
+                        </td>
+                        <td>Lunes</td>
+                        <td>
+                            14:15 a 17:30
+                        </td>
+                        <td>
+                            Aula a determinar
+                        </td>
+                    </tr>
+                    <tr class="js-dia horarios visible" dia_sem="Jueves" comision="149893">
+                        <td>
+                            Práctica
+                        </td>
+                        <td>Jueves</td>
+                        <td>
+                            07:45 a 11:00
+                        </td>
+                        <td>
+                            Aula a determinar
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-bordered table-condensed comision" comision="152176" sede="1" docentes="MONZON NELSON HUGO, REMESAR PAULA INES">
+                <tbody>
+                    <tr class="comision">
+                        <th colspan="1">
+                            <h5>Comisión: 15IN</h5>
+                        </th>
+                        <td colspan="2" class="detalle_comision"><span><strong>Turno:</strong>
+                                Noche
+                            </span><span><strong>Cupo / insc.:</strong>
+                                45 / 0
+                            </span></td>
+                        <td colspan="1" class="detalle_comision"><span><strong>Instancias:</strong>
+                                Regularidad
+                            </span><span><strong>Ubicación:</strong>
+                                Buenos Aires
+                            </span><span><strong>Docentes:</strong>
+                                MONZON NELSON HUGO (Asistente), REMESAR PAULA INES (Adjunto)
+                            </span></td>
+                    </tr>
+                    <tr class="horarios encabezados">
+                        <th class="tipo_curso">Tipo de clase</th>
+                        <th class="dia">Día</th>
+                        <th class="horario">Horario</th>
+                        <th class="aula">Aula</th>
+                    </tr>
+                    <tr class="js-dia horarios oscuro visible" dia_sem="Martes" comision="152176">
+                        <td>
+                            Teórico
+                        </td>
+                        <td>Martes</td>
+                        <td>
+                            16:00 a 19:30
+                        </td>
+                        <td>
+                            Aula a determinar
+                        </td>
+                    </tr>
+                    <tr class="js-dia horarios visible" dia_sem="Viernes" comision="152176">
+                        <td>
+                            Práctica
+                        </td>
+                        <td>Viernes</td>
+                        <td>
+                            16:00 a 19:30
+                        </td>
+                        <td>
+                            Aula a determinar
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-bordered table-condensed comision" comision="153041" sede="1" docentes="Sin docentes">
+                <tbody>
+                    <tr class="comision">
+                        <th colspan="1">
+                            <h5>Comisión: 15KM</h5>
+                        </th>
+                        <td colspan="2" class="detalle_comision"><span><strong>Turno:</strong>
+                                Mañana
+                            </span><span><strong>Cupo / insc.:</strong>
+                                45 / 0
+                            </span></td>
+                        <td colspan="1" class="detalle_comision"><span><strong>Instancias:</strong>
+                                Regularidad
+                            </span><span><strong>Ubicación:</strong>
+                                Buenos Aires
+                            </span><span><strong>Docentes:</strong>
+                                Sin docentes
+                            </span></td>
+                    </tr>
+                    <tr class="horarios encabezados">
+                        <th class="tipo_curso">Tipo de clase</th>
+                        <th class="dia">Día</th>
+                        <th class="horario">Horario</th>
+                        <th class="aula">Aula</th>
+                    </tr>
+                    <tr class="js-dia horarios oscuro visible" dia_sem="Lunes" comision="153041">
+                        <td>
+                            Práctica
+                        </td>
+                        <td>Lunes</td>
+                        <td>
+                            07:45 a 11:00
+                        </td>
+                        <td>
+                            Aula a determinar
+                        </td>
+                    </tr>
+                    <tr class="js-dia horarios visible" dia_sem="Viernes" comision="153041">
+                        <td>
+                            Teórico
+                        </td>
+                        <td>Viernes</td>
+                        <td>
+                            10:15 a 14:15
+                        </td>
+                        <td>
+                            Aula a determinar
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="js-recuadro_actividad" actividad="Análisis Económico y Optimización (Micro) (GEC0224)" style="display: block;">
+            <h4 style="background-color:#0088cc; color:white;">Actividad: Análisis Económico y Optimización (Micro) (GEC0224)
+            </h4>
+            <table class="table table-bordered table-condensed comision" comision="149918" sede="1" docentes="COCCOLO PABLO BARTOLOME      ">
+                <tbody>
+                    <tr class="comision">
+                        <th colspan="1">
+                            <h5>Comisión: 15AM - Industriales y Electrónicos</h5>
+                        </th>
+                        <td colspan="2" class="detalle_comision"><span><strong>Turno:</strong>
+                                Mañana
+                            </span><span><strong>Cupo / insc.:</strong>
+                                45 / 0
+                            </span></td>
+                        <td colspan="1" class="detalle_comision"><span><strong>Instancias:</strong>
+                                Regularidad
+                            </span><span><strong>Ubicación:</strong>
+                                Buenos Aires
+                            </span><span><strong>Docentes:</strong>
+                                COCCOLO PABLO BARTOLOME (Protitular)
+                            </span></td>
+                    </tr>
+                    <tr class="horarios encabezados">
+                        <th class="tipo_curso">Tipo de clase</th>
+                        <th class="dia">Día</th>
+                        <th class="horario">Horario</th>
+                        <th class="aula">Aula</th>
+                    </tr>
+                    <tr class="js-dia horarios oscuro visible" dia_sem="Lunes" comision="149918">
+                        <td>
+                            Práctica
+                        </td>
+                        <td>Lunes</td>
+                        <td>
+                            14:15 a 16:00
+                        </td>
+                        <td>
+                            Aula a determinar
+                        </td>
+                    </tr>
+                    <tr class="js-dia horarios visible" dia_sem="Miercoles" comision="149918">
+                        <td>
+                            Teórico
+                        </td>
+                        <td>Miércoles</td>
+                        <td>
+                            08:30 a 10:15
+                        </td>
+                        <td>
+                            Aula a determinar
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-bordered table-condensed comision" comision="149919" sede="1" docentes="FERRARI JUAN ANTONIO         ">
+                <tbody>
+                    <tr class="comision">
+                        <th colspan="1">
+                            <h5>Comisión: 15BM - Industriales y Electrónicos</h5>
+                        </th>
+                        <td colspan="2" class="detalle_comision"><span><strong>Turno:</strong>
+                                Mañana
+                            </span><span><strong>Cupo / insc.:</strong>
+                                45 / 0
+                            </span></td>
+                        <td colspan="1" class="detalle_comision"><span><strong>Instancias:</strong>
+                                Regularidad
+                            </span><span><strong>Ubicación:</strong>
+                                Buenos Aires
+                            </span><span><strong>Docentes:</strong>
+                                FERRARI JUAN ANTONIO (Adjunto)
+                            </span></td>
+                    </tr>
+                    <tr class="horarios encabezados">
+                        <th class="tipo_curso">Tipo de clase</th>
+                        <th class="dia">Día</th>
+                        <th class="horario">Horario</th>
+                        <th class="aula">Aula</th>
+                    </tr>
+                    <tr class="js-dia horarios oscuro visible" dia_sem="Lunes" comision="149919">
+                        <td>
+                            Práctica
+                        </td>
+                        <td>Lunes</td>
+                        <td>
+                            07:45 a 09:15
+                        </td>
+                        <td>
+                            Aula a determinar
+                        </td>
+                    </tr>
+                    <tr class="js-dia horarios visible" dia_sem="Lunes" comision="149919">
+                        <td>
+                            Teórico
+                        </td>
+                        <td>Lunes</td>
+                        <td>
+                            09:30 a 11:00
+                        </td>
+                        <td>
+                            Aula a determinar
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-bordered table-condensed comision" comision="149920" sede="1" docentes="GREAVES PEDRO LUIS EUGENIO   ">
+                <tbody>
+                    <tr class="comision">
+                        <th colspan="1">
+                            <h5>Comisión: 15DM - Ambientales</h5>
+                        </th>
+                        <td colspan="2" class="detalle_comision"><span><strong>Turno:</strong>
+                                Mañana
+                            </span><span><strong>Cupo / insc.:</strong>
+                                45 / 0
+                            </span></td>
+                        <td colspan="1" class="detalle_comision"><span><strong>Instancias:</strong>
+                                Regularidad
+                            </span><span><strong>Ubicación:</strong>
+                                Buenos Aires
+                            </span><span><strong>Docentes:</strong>
+                                GREAVES PEDRO LUIS EUGENIO (Adjunto)
+                            </span></td>
+                    </tr>
+                    <tr class="horarios encabezados">
+                        <th class="tipo_curso">Tipo de clase</th>
+                        <th class="dia">Día</th>
+                        <th class="horario">Horario</th>
+                        <th class="aula">Aula</th>
+                    </tr>
+                    <tr class="js-dia horarios oscuro visible" dia_sem="Martes" comision="149920">
+                        <td>
+                            Teórico
+                        </td>
+                        <td>Martes</td>
+                        <td>
+                            15:15 a 16:45
+                        </td>
+                        <td>
+                            Aula a determinar
+                        </td>
+                    </tr>
+                    <tr class="js-dia horarios visible" dia_sem="Martes" comision="149920">
+                        <td>
+                            Práctica
+                        </td>
+                        <td>Martes</td>
+                        <td>
+                            16:45 a 18:45
+                        </td>
+                        <td>
+                            Aula a determinar
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-bordered table-condensed comision" comision="149921" sede="1" docentes="COCCOLO PABLO BARTOLOME      ">
+                <tbody>
+                    <tr class="comision">
+                        <th colspan="1">
+                            <h5>Comisión: 15EN - Ing. Civil</h5>
+                        </th>
+                        <td colspan="2" class="detalle_comision"><span><strong>Turno:</strong>
+                                Noche
+                            </span><span><strong>Cupo / insc.:</strong>
+                                45 / 0
+                            </span></td>
+                        <td colspan="1" class="detalle_comision"><span><strong>Instancias:</strong>
+                                Regularidad
+                            </span><span><strong>Ubicación:</strong>
+                                Buenos Aires
+                            </span><span><strong>Docentes:</strong>
+                                COCCOLO PABLO BARTOLOME (Protitular)
+                            </span></td>
+                    </tr>
+                    <tr class="horarios encabezados">
+                        <th class="tipo_curso">Tipo de clase</th>
+                        <th class="dia">Día</th>
+                        <th class="horario">Horario</th>
+                        <th class="aula">Aula</th>
+                    </tr>
+                    <tr class="js-dia horarios oscuro visible" dia_sem="Miercoles" comision="149921">
+                        <td>
+                            Teórico
+                        </td>
+                        <td>Miércoles</td>
+                        <td>
+                            16:00 a 17:30
+                        </td>
+                        <td>
+                            Aula a determinar
+                        </td>
+                    </tr>
+                    <tr class="js-dia horarios visible" dia_sem="Miercoles" comision="149921">
+                        <td>
+                            Práctica
+                        </td>
+                        <td>Miércoles</td>
+                        <td>
+                            18:00 a 19:30
+                        </td>
+                        <td>
+                            Aula a determinar
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="js-recuadro_actividad" actividad="Arquitectura de Computadoras (GCO0330)" style="display: block;">
+            <h4 style="background-color:#0088cc; color:white;">Actividad: Arquitectura de Computadoras (GCO0330)</h4>
+            <table class="table table-bordered table-condensed comision" comision="149941" sede="1" docentes="HAMKALO JOSE LUIS            ">
+                <tbody>
+                    <tr class="comision">
+                        <th colspan="1">
+                            <h5>Comisión: 15FN - Ing. Informática</h5>
+                        </th>
+                        <td colspan="2" class="detalle_comision"><span><strong>Turno:</strong>
+                                Noche
+                            </span><span><strong>Cupo / insc.:</strong>
+                                30 / 0
+                            </span></td>
+                        <td colspan="1" class="detalle_comision"><span><strong>Instancias:</strong>
+                                Regularidad
+                            </span><span><strong>Ubicación:</strong>
+                                Buenos Aires
+                            </span><span><strong>Docentes:</strong>
+                                HAMKALO JOSE LUIS (Titular)
+                            </span></td>
+                    </tr>
+                    <tr class="horarios encabezados">
+                        <th class="tipo_curso">Tipo de clase</th>
+                        <th class="dia">Día</th>
+                        <th class="horario">Horario</th>
+                        <th class="aula">Aula</th>
+                    </tr>
+                    <tr class="js-dia horarios oscuro visible" dia_sem="Martes" comision="149941">
+                        <td>
+                            Teórico
+                        </td>
+                        <td>Martes</td>
+                        <td>
+                            19:45 a 23:00
+                        </td>
+                        <td>
+                            Aula a determinar
+                        </td>
+                    </tr>
+                    <tr class="js-dia horarios visible" dia_sem="Viernes" comision="149941">
+                        <td>
+                            Práctica
+                        </td>
+                        <td>Viernes</td>
+                        <td>
+                            19:45 a 23:00
+                        </td>
+                        <td>
+                            Aula a determinar
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="js-recuadro_actividad" actividad="Auditoría Informática (GCC0524)" style="display: block;">
+            <h4 style="background-color:#0088cc; color:white;">Actividad: Auditoría Informática (GCC0524)</h4>
+            <table class="table table-bordered table-condensed comision" comision="149951" sede="1" docentes="BOLLMANN GERMAN GUSTAVO, ZANOTTI ALEJANDRO">
+                <tbody>
+                    <tr class="comision">
+                        <th colspan="1">
+                            <h5>Comisión: 15FN - Ing. Informática</h5>
+                        </th>
+                        <td colspan="2" class="detalle_comision"><span><strong>Turno:</strong>
+                                Noche
+                            </span><span><strong>Cupo / insc.:</strong>
+                                30 / 0
+                            </span></td>
+                        <td colspan="1" class="detalle_comision"><span><strong>Instancias:</strong>
+                                Regularidad
+                            </span><span><strong>Ubicación:</strong>
+                                Buenos Aires
+                            </span><span><strong>Docentes:</strong>
+                                BOLLMANN GERMAN GUSTAVO (Protitular), ZANOTTI ALEJANDRO (Asistente)
+                            </span></td>
+                    </tr>
+                    <tr class="horarios encabezados">
+                        <th class="tipo_curso">Tipo de clase</th>
+                        <th class="dia">Día</th>
+                        <th class="horario">Horario</th>
+                        <th class="aula">Aula</th>
+                    </tr>
+                    <tr class="js-dia horarios oscuro visible" dia_sem="Martes" comision="149951">
+                        <td>
+                            Teórico
+                        </td>
+                        <td>Martes</td>
+                        <td>
+                            18:00 a 20:30
+                        </td>
+                        <td>
+                            Aula a determinar
+                        </td>
+                    </tr>
+                    <tr class="js-dia horarios visible" dia_sem="Martes" comision="149951">
+                        <td>
+                            Práctica
+                        </td>
+                        <td>Martes</td>
+                        <td>
+                            20:30 a 23:00
+                        </td>
+                        <td>
+                            Aula a determinar
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="js-recuadro_actividad" actividad="Base de Datos (GCO0422)" style="display: block;">
+            <h4 style="background-color:#0088cc; color:white;">Actividad: Base de Datos (GCO0422)</h4>
+            <table class="table table-bordered table-condensed comision" comision="149954" sede="1" docentes="DI PASQUALE RICARDO HECTOR   , ISIDRO ALEJANDRO DANIEL      ">
+                <tbody>
+                    <tr class="comision">
+                        <th colspan="1">
+                            <h5>Comisión: 15FN - Ing. Informática</h5>
+                        </th>
+                        <td colspan="2" class="detalle_comision"><span><strong>Turno:</strong>
+                                Noche
+                            </span><span><strong>Cupo / insc.:</strong>
+                                35 / 0
+                            </span></td>
+                        <td colspan="1" class="detalle_comision"><span><strong>Instancias:</strong>
+                                Regularidad
+                            </span><span><strong>Ubicación:</strong>
+                                Buenos Aires
+                            </span><span><strong>Docentes:</strong>
+                                DI PASQUALE RICARDO HECTOR (Protitular), ISIDRO ALEJANDRO DANIEL (Asistente)
+                            </span></td>
+                    </tr>
+                    <tr class="horarios encabezados">
+                        <th class="tipo_curso">Tipo de clase</th>
+                        <th class="dia">Día</th>
+                        <th class="horario">Horario</th>
+                        <th class="aula">Aula</th>
+                    </tr>
+                    <tr class="js-dia horarios oscuro visible" dia_sem="Martes" comision="149954">
+                        <td>
+                            Teórico
+                        </td>
+                        <td>Martes</td>
+                        <td>
+                            18:00 a 20:30
+                        </td>
+                        <td>
+                            Aula a determinar
+                        </td>
+                    </tr>
+                    <tr class="js-dia horarios visible" dia_sem="Martes" comision="149954">
+                        <td>
+                            Práctica
+                        </td>
+                        <td>Martes</td>
+                        <td>
+                            20:30 a 23:00
+                        </td>
+                        <td>
+                            Aula a determinar
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="js-recuadro_actividad" actividad="Buenas Prácticas Comunitarias en Discapacidad (GSO0980)" style="display: block;">
+            <h4 style="background-color:#0088cc; color:white;">Actividad: Buenas Prácticas Comunitarias en Discapacidad (GSO0980)
+            </h4>
+            <table class="table table-bordered table-condensed comision" comision="149970" sede="1" docentes="Sin docentes">
+                <tbody>
+                    <tr class="comision">
+                        <th colspan="1">
+                            <h5>Comisión: 04ZT (Pantano-Aguirre)</h5>
+                        </th>
+                        <td colspan="2" class="detalle_comision"><span><strong>Turno:</strong>
+                                Tarde
+                            </span><span><strong>Cupo / insc.:</strong>
+                                Sin definir / 0
+                            </span></td>
+                        <td colspan="1" class="detalle_comision"><span><strong>Instancias:</strong>
+                                Promoción
+                            </span><span><strong>Ubicación:</strong>
+                                Buenos Aires
+                            </span><span><strong>Docentes:</strong>
+                                Sin docentes
+                            </span></td>
+                    </tr>
+                    <tr class="horarios encabezados">
+                        <th class="tipo_curso">Tipo de clase</th>
+                        <th class="dia">Día</th>
+                        <th class="horario">Horario</th>
+                        <th class="aula">Aula</th>
+                    </tr>
+                    <tr class="js-dia horarios oscuro visible" dia_sem="sin_definir" comision="149970">
+                        <td>
+                            Sin definir
+                        </td>
+                        <td>Sin definir</td>
+                        <td>
+                            Sin definir
+                        </td>
+                        <td>
+                            Aula a determinar
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="js-recuadro_actividad" actividad="Cálculo Avanzado (GMA0230)" style="display: block;">
+            <h4 style="background-color:#0088cc; color:white;">Actividad: Cálculo Avanzado (GMA0230)</h4>
+            <table class="table table-bordered table-condensed comision" comision="149972" sede="1" docentes="PAVON MARTIN ROBERTO         , RIU JORGE ANIBAL             ">
+                <tbody>
+                    <tr class="comision">
+                        <th colspan="1">
+                            <h5>Comisión: 15MM</h5>
+                        </th>
+                        <td colspan="2" class="detalle_comision"><span><strong>Turno:</strong>
+                                Mañana
+                            </span><span><strong>Cupo / insc.:</strong>
+                                45 / 0
+                            </span></td>
+                        <td colspan="1" class="detalle_comision"><span><strong>Instancias:</strong>
+                                Regularidad
+                            </span><span><strong>Ubicación:</strong>
+                                Buenos Aires
+                            </span><span><strong>Docentes:</strong>
+                                PAVON MARTIN ROBERTO (Titular), RIU JORGE ANIBAL (Adjunto)
+                            </span></td>
+                    </tr>
+                    <tr class="horarios encabezados">
+                        <th class="tipo_curso">Tipo de clase</th>
+                        <th class="dia">Día</th>
+                        <th class="horario">Horario</th>
+                        <th class="aula">Aula</th>
+                    </tr>
+                    <tr class="js-dia horarios oscuro visible" dia_sem="Lunes" comision="149972">
+                        <td>
+                            Teórico
+                        </td>
+                        <td>Lunes</td>
+                        <td>
+                            10:15 a 14:15
+                        </td>
+                        <td>
+                            Aula a determinar
+                        </td>
+                    </tr>
+                    <tr class="js-dia horarios visible" dia_sem="Jueves" comision="149972">
+                        <td>
+                            Práctica
+                        </td>
+                        <td>Jueves</td>
+                        <td>
+                            07:45 a 12:15
+                        </td>
+                        <td>
+                            Aula a determinar
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-bordered table-condensed comision" comision="149973" sede="1" docentes="GUERON SANCHEZ JORGE ISIDORO , RIU JORGE ANIBAL             ">
+                <tbody>
+                    <tr class="comision">
+                        <th colspan="1">
+                            <h5>Comisión: 15NM</h5>
+                        </th>
+                        <td colspan="2" class="detalle_comision"><span><strong>Turno:</strong>
+                                Mañana
+                            </span><span><strong>Cupo / insc.:</strong>
+                                45 / 0
+                            </span></td>
+                        <td colspan="1" class="detalle_comision"><span><strong>Instancias:</strong>
+                                Regularidad
+                            </span><span><strong>Ubicación:</strong>
+                                Buenos Aires
+                            </span><span><strong>Docentes:</strong>
+                                GUERON SANCHEZ JORGE ISIDORO (Adjunto), RIU JORGE ANIBAL (Adjunto)
+                            </span></td>
+                    </tr>
+                    <tr class="horarios encabezados">
+                        <th class="tipo_curso">Tipo de clase</th>
+                        <th class="dia">Día</th>
+                        <th class="horario">Horario</th>
+                        <th class="aula">Aula</th>
+                    </tr>
+                    <tr class="js-dia horarios oscuro visible" dia_sem="Martes" comision="149973">
+                        <td>
+                            Práctica
+                        </td>
+                        <td>Martes</td>
+                        <td>
+                            07:45 a 12:15
+                        </td>
+                        <td>
+                            Aula a determinar
+                        </td>
+                    </tr>
+                    <tr class="js-dia horarios visible" dia_sem="Jueves" comision="149973">
+                        <td>
+                            Teórico
+                        </td>
+                        <td>Jueves</td>
+                        <td>
+                            07:45 a 11:00
+                        </td>
+                        <td>
+                            Aula a determinar
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-bordered table-condensed comision" comision="149974" sede="1" docentes="CANGA SANDRA CARMEN          , CORVALAN ALVARO              ">
+                <tbody>
+                    <tr class="comision">
+                        <th colspan="1">
+                            <h5>Comisión: 15OM</h5>
+                        </th>
+                        <td colspan="2" class="detalle_comision"><span><strong>Turno:</strong>
+                                Mañana
+                            </span><span><strong>Cupo / insc.:</strong>
+                                45 / 0
+                            </span></td>
+                        <td colspan="1" class="detalle_comision"><span><strong>Instancias:</strong>
+                                Regularidad
+                            </span><span><strong>Ubicación:</strong>
+                                Buenos Aires
+                            </span><span><strong>Docentes:</strong>
+                                CANGA SANDRA CARMEN (Adjunto), CORVALAN ALVARO (Adjunto)
+                            </span></td>
+                    </tr>
+                    <tr class="horarios encabezados">
+                        <th class="tipo_curso">Tipo de clase</th>
+                        <th class="dia">Día</th>
+                        <th class="horario">Horario</th>
+                        <th class="aula">Aula</th>
+                    </tr>
+                    <tr class="js-dia horarios oscuro visible" dia_sem="Martes" comision="149974">
+                        <td>
+                            Teórico
+                        </td>
+                        <td>Martes</td>
+                        <td>
+                            07:45 a 11:00
+                        </td>
+                        <td>
+                            Aula a determinar
+                        </td>
+                    </tr>
+                    <tr class="js-dia horarios visible" dia_sem="Miercoles" comision="149974">
+                        <td>
+                            Práctica
+                        </td>
+                        <td>Miércoles</td>
+                        <td>
+                            07:45 a 12:15
+                        </td>
+                        <td>
+                            Aula a determinar
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
 </body>
 <html>
